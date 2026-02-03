@@ -25,13 +25,11 @@ class MainActivity : AppCompatActivity() {
             button2.isEnabled = isChecked
         }
 
-        // Button 1 changes text
         button1.setOnClickListener {
             if (!checkBox.isChecked) return@setOnClickListener
             textField.text = "Button 1 clicked"
         }
 
-        // Button 2 changes text
         button2.setOnClickListener {
             if (!checkBox.isChecked) return@setOnClickListener
             textField.text = "Button 2 clicked"
